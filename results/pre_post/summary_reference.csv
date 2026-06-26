@@ -1,0 +1,5 @@
+scenario,arm,arm_label,lambda,cost_std,seed,horizon,final_abs_bias,total_regret
+reference,greedy,Naive (greedy),0.6,0.3,2,200,0.07253654563930652,819.0332229181236
+reference,controlled_variance,Controlled-variance,0.6,0.3,2,200,0.11731570616125575,487.5067328721371
+reference,twosls,2SLS,0.6,0.3,2,200,0.5013941229767133,59.563248127418504
+reference,dml,DML,0.6,0.3,2,200,0.4963453085341986,30.723611587644136

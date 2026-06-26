@@ -1,0 +1,57 @@
+{
+  "column_dictionary": {
+    "cumulative_regret": "cumsum(oracle_profit - realized_profit)",
+    "cycle": "pricing period index, 0..horizon-1",
+    "estimated_elasticity": "forecaster's believed elasticity (NaN in warm-up)",
+    "observed_demand": "units sold (possibly censored)",
+    "oracle_price": "full-information oracle price",
+    "oracle_profit": "per-cycle profit under the oracle",
+    "price": "price set by the policy",
+    "realized_profit": "per-cycle profit under the policy",
+    "residual_bias": "estimated_elasticity - true_elasticity",
+    "true_elasticity": "ground-truth elasticity built into the world"
+  },
+  "cost_std": 0.3,
+  "files": {
+    "series": "series_reference.csv",
+    "summary": "summary_reference.csv"
+  },
+  "forecaster": "gbt",
+  "fploop_version": "0.1.0",
+  "generated_utc": "2026-06-22T22:18:03+00:00",
+  "git_commit": "5d4fbfc66494cf195846dd5d7464d7f392f22e86",
+  "horizon": 200,
+  "interventions": [
+    "controlled_variance",
+    "twosls",
+    "dml"
+  ],
+  "lambda": 0.6,
+  "scenario": "reference",
+  "seed": 2,
+  "world_config": {
+    "base_demand": 100.0,
+    "capacity": null,
+    "censoring": false,
+    "competition": false,
+    "competitor_price_mean": 1.0,
+    "competitor_price_std": 0.1,
+    "cost_shifter_std": 0.3,
+    "cross_elasticity": 0.0,
+    "drift": false,
+    "drift_kind": "none",
+    "drift_magnitude": 0.0,
+    "drift_period": 0,
+    "elasticity": -1.5,
+    "endogeneity_strength": 0.6,
+    "horizon": 200,
+    "marginal_cost": 1.0,
+    "n_products": 1,
+    "reference_effect": 0.5,
+    "reference_memory": 0.7,
+    "seed": null,
+    "shock_ar1": 0.0,
+    "shock_std": 0.0,
+    "strategic": false
+  }
+}

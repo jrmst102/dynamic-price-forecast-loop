@@ -1,0 +1,12 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Run Dash app",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/app/app.py",
+      "console": "integratedTerminal"
+    }
+  ]
+}
